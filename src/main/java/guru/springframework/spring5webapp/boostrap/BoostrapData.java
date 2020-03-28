@@ -51,6 +51,7 @@ public class BoostrapData implements CommandLineRunner {
         publisherRepository.save(publisher);
 
         System.out.println("Started in Boostrap");
+//        System.out.println("Number of Bookks: " + authorRepository.findAll());
         System.out.println("Number of Bookks: " + bookRepository.count());
         System.out.println("Number of Publishers: " + publisherRepository.count());
         System.out.println("Number of books per publisher: " + publisher.getBooks().size());
